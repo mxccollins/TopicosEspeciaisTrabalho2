@@ -26,7 +26,6 @@ public class Contato {
         this.telefone = telefone;
     }
 
-
     public void exibirContato() {
         System.out.println("Nome: " + nome);
         System.out.println("Telefone: " + telefone);
