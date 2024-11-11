@@ -20,7 +20,7 @@ public class Agenda {
     
     public void adicionarContato(Contato contato) {
         contatos.add(contato);
-        System.out.println("Contato adicionado!");
+        System.out.println("Novo contato adicionado com sucesso!");
     }
     
    
@@ -28,7 +28,7 @@ public class Agenda {
         if (contatos.isEmpty()) {
             System.out.println("A agenda esta vazia.");
         } else {
-            System.out.println("Exibindo a lista de contatos:");
+            System.out.println("Exibindo contatos:");
             for (int i = 0; i < contatos.size(); i++) {
                 System.out.println("Contato " + (i + 1) + ":");
                 contatos.get(i).exibirContato();
@@ -44,7 +44,7 @@ public class Agenda {
             if (!novoTelefone.isEmpty()) contato.setTelefone(novoTelefone);
             System.out.println("Contato atualizado!");
         } else {
-            System.out.println("Contato nao encontrado.");
+            System.out.println("Contato inexistente.");
         }
     }
 
